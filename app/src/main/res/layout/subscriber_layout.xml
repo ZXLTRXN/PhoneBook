@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    android:background="@android:drawable/edit_text"
+>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/butttons_width"
+        android:layout_height="@dimen/butttons_width"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_user_40" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="@dimen/name_size"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        app:layout_constraintTop_toTopOf="@+id/iv" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="@dimen/name_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <ImageButton
+        android:id="@+id/bCall"
+        android:layout_width="@dimen/butttons_width"
+        android:layout_height="@dimen/butttons_height"
+        android:layout_marginStart="@dimen/butttons_margin"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/bEdit"
+        app:layout_constraintStart_toEndOf="@+id/bEdit"
+        app:srcCompat="@drawable/ic_phone_40" />
+
+    <ImageButton
+        android:id="@+id/bEdit"
+        android:layout_width="@dimen/butttons_width"
+        android:layout_height="@dimen/butttons_height"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone"
+        app:srcCompat="@drawable/ic_edit_40" />
+
+    <ImageButton
+        android:id="@+id/bDelete"
+        android:layout_width="@dimen/butttons_width"
+        android:layout_height="@dimen/butttons_height"
+        android:layout_marginEnd="@dimen/butttons_margin"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/bEdit"
+        app:layout_constraintEnd_toStartOf="@+id/bEdit"
+        app:srcCompat="@drawable/ic_remove_40" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

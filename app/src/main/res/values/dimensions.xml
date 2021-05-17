@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="butttons_margin">50dp</dimen>
+    <dimen name="card_margin">3dp</dimen>
+    <dimen name="butttons_height">30dp</dimen>
+    <dimen name="butttons_width">50dp</dimen>
+    <dimen name="name_size">16sp</dimen>
+    <dimen name="image_size">150dp</dimen>
+    <dimen name="clear_icon_size">20dp</dimen>
+    <dimen name="rv_padding">90dp</dimen>
+
+
+</resources>
